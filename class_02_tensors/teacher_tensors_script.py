@@ -312,28 +312,3 @@ stacked_tensors = torch.stack((tensor1, tensor2, tensor1, tensor2))
 
 print("Stacking using torch.stack():")
 print("Stacked Tensors:\n", stacked_tensors.shape)
-
-
-
-#Step 12: Broadcasting**
-# Broadcasting with a scalar
-scalar = torch.tensor(2.0)
-tensor = torch.tensor([[1.0, 2.0, 3.0],
-                       [4.0, 5.0, 6.0]])
-
-broadcasted_scalar = scalar * tensor
-print("Broadcasting with Scalar:")
-print("Scalar:\n", scalar)
-print("Broadcasted Result:\n", broadcasted_scalar)
-print()
-
-# Broadcasting with different shapes
-tensor1 = torch.tensor([[1.0, 2.0, 3.0]])
-tensor2 = torch.tensor([[4.0],
-                        [5.0]])
-
-broadcasted_tensors = tensor1 + tensor2
-print("Broadcasting with Different Shapes:")
-print("Tensor 1:\n", tensor1)
-print("Tensor 2:\n", tensor2)
-print("Broadcasted Result:\n", broadcasted_tensors)
