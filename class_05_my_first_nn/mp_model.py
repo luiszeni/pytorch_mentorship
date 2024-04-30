@@ -1,6 +1,5 @@
 from torch import nn
 
-
 class MPModel(nn.Module):
 
     def __init__(self, in_size=30, n_classes=2):
